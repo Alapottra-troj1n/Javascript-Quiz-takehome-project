@@ -109,6 +109,7 @@ let score = 0;
 const quizContainer = document.getElementById("quizContainer");
 const submitButton = document.getElementById("submitButton");
 const timer = document.getElementById("counter");
+const radios = document.querySelectorAll('.radios');
 
 
 
@@ -148,6 +149,12 @@ setInterval(function () {
 
 
 
+
+
+
+
+
+
 const loadQuiz = () => {
     for (let i = 0; i < quizData.length; i++) {
         const quizDiv = document.createElement("div");
@@ -157,7 +164,7 @@ const loadQuiz = () => {
         <h2 class="question">${i + 1}. ${quizData[i].title} ?</h2>
         <div class="answers">
             ${quizData[i].options.map((option) => `<div>
-                <input type="radio" name="q${i + 1}"  value="${option}" >
+                <input type="radio" name="q${i + 1}" onchange='handleRadioChange(event)' class="radios"  value="${option}" >
                 <label for="radio1">${option}</label>
             </div>
             `).join('')
@@ -174,6 +181,34 @@ const loadQuiz = () => {
     }
 
 }
+
+
+
+
+
+
+
+const handleRadioChange = (event) => {
+    if(event.target.checked){
+   
+        const targetName = event.target.name;
+
+        let group = document.querySelectorAll(`input[name=${targetName}]`)
+        console.log(group)
+
+        for(let i = 0; i < group.length; i++){
+            console.log(group[i].setAttribute('disabled', ''))
+        }
+       
+
+       
+    }
+}
+
+
+
+
+
 
 
 
@@ -212,3 +247,4 @@ const handleSubmit = () => {
 
 loadQuiz()
 submitButton.addEventListener("click", handleSubmit)
+

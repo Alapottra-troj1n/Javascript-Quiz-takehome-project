@@ -30,6 +30,7 @@
 }
 
 .heroContent {
+  
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -37,6 +38,7 @@
 
 .heroContent > h2 {
   font-size: 45px;
+  font-family: 'Rosario';
   margin-bottom: 41px;
   font-weight: 500;
 }
@@ -90,6 +92,7 @@ button:hover {
   }
 
   .heroContent > h2 {
+ 
     font-size: 35px;
     margin: 30px 0;
     
