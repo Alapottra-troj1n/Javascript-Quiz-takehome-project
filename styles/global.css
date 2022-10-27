@@ -4,6 +4,7 @@
   --quizAccent: #b0b8ff;
   --resultAccent: linear-gradient(269.85deg, #ffdf64 0.12%, #f4d456 99.86%);
   --timeoutAccent: linear-gradient(269.85deg, #ff646d 0.12%, #f45656 99.86%);
+  --black: #050f01;
 }
 
 * {
@@ -13,30 +14,3 @@
   box-sizing: border-box;
 }
 
-.home {
-  background-color: var(--homeAccent);
-  max-width: 1200px;
-  margin: 0 auto;
-
-}
-
-.heroSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-.heroImage{
-    display:flex;
-    justify-content: flex-start;
-    flex:2;
-}
-
-.heroImage img{
-   height: 100%;
-   width: 100%;
-}
-
-.heroCTA{
-    flex:1;
-}
