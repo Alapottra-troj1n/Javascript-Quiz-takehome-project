@@ -164,8 +164,8 @@ const loadQuiz = () => {
         <h2 class="question">${i + 1}. ${quizData[i].title} ?</h2>
         <div class="answers">
             ${quizData[i].options.map((option) => `<div>
-                <input type="radio" name="q${i + 1}" onchange='handleRadioChange(event)' class="radios"  value="${option}" >
-                <label for="radio1">${option}</label>
+                <input type="radio" name="q${i + 1}" onchange='handleRadioChange(event)' id="quid${i + 1}" class="radios"  value="${option}" >
+                <label for="quid${i + 1 }">${option}</label>
             </div>
             `).join('')
 
