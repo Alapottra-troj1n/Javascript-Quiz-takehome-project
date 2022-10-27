@@ -1,0 +1,80 @@
+.mcqBody {
+  background-color: var(--quizAccent);
+  padding-top: 80px;
+  color: var(--black);
+}
+
+.quizBody {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.timer {
+  position: fixed;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.timer > button {
+  background-color: var(--black);
+  color: white;
+  padding: 10px 70px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  transition: 200ms ease-in-out;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.timer > button:hover {
+  background-color: rgb(38, 38, 38);
+}
+
+.quiz {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.quizWrapper {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  margin: 25px 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.answers {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  margin-top: 10px;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.answers input[type="radio"] {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.answers div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

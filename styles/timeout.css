@@ -1,0 +1,49 @@
+.resultsBody{
+    background-image: var(--timeoutAccent);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultsCard{
+    background-color: white;
+    width: 20%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 60px 10px;
+
+}
+.resultsCard h2{
+    font-size: 40px;
+    margin-top: 10px;
+}
+.resultsCard p{
+    font-size: 17px;
+    margin: 10px 0px;
+}
+
+.resultsCard button{
+    font-size: 17px;
+    font-weight: 700;
+    padding: 14px 90px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--black);
+    color:white;
+    border-radius: 5px;
+    transition: 200ms ease-in-out;
+}
+
+.resultsCard button:hover{
+    background-color: rgb(37, 37, 37);
+}
+
+.resultsCard img{
+    width: 70%;
+}

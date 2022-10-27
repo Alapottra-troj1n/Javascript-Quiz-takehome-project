@@ -145,6 +145,8 @@ const loadQuiz = () => {
 
 }
 
+
+
 const handleSubmit = () => {
     score = 0;
     let userAnswers = [quizContainer.q1.value, quizContainer.q2.value, quizContainer.q3.value, quizContainer.q4.value, quizContainer.q5.value,
