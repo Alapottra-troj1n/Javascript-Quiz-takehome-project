@@ -28,7 +28,28 @@
   
   .heroCTA{
       flex:1;
+     
+      
   }
+
+  .heroContent{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+ 
+    
+}
+
+.heroContent > h2{
+   
+    font-size: 45px;
+    margin-bottom: 41px;
+    font-weight: 500;
+    
+ 
+    
+}
   .ctaCard{
       padding: 65px 34px;
       background-color: white;
@@ -48,6 +69,7 @@
       margin-top: 17px;
      
   }
+
   
   button{
       padding: 15px 180px;
