@@ -96,11 +96,15 @@ const quizData = [
     }
 ];
 
+//answer should be stored and fetched from a database for better security in a production level software
+
+const answers = ['ate', 'I am eating rice', 'I have eaten rice', 'I have been eating rice for 1 year', 'I was eating rice', 'I have eaten rice', 'I have been eating rice for 1 year', 'I will be eating rice', 'I will have eaten rice', 'I will have been eating rice for 1 year']
+
+
 // SELECTORS
 
 const quizContainer = document.getElementById("quizContainer");
-
-
+const submitButton = document.getElementById("submitButton");
 
 
 
@@ -108,6 +112,8 @@ const quizContainer = document.getElementById("quizContainer");
 
 
 // FUNCTIONS
+
+
 
 const loadQuiz = () => {
     for (let i = 0; i < quizData.length; i++) {
@@ -117,8 +123,8 @@ const loadQuiz = () => {
         let quizFormat = `
         <h2 class="question">${i + 1}. ${quizData[i].title} ?</h2>
         <div class="answers">
-            ${quizData[i].options.map(option => `<div>
-                <input type="radio" name="normal" id="radio1" value="eat" checked>
+            ${quizData[i].options.map((option) => `<div>
+                <input type="radio" name="q${i + 1}"  value="${option}" >
                 <label for="radio1">${option}</label>
             </div>
             `).join('')
@@ -136,6 +142,16 @@ const loadQuiz = () => {
 
 }
 
+const handleSubmit = () => {
+
+    
+}
+
+
+
+
+
+
 
 
 
@@ -143,3 +159,4 @@ const loadQuiz = () => {
 // TRIGGERS
 
 loadQuiz()
+submitButton.addEventListener("click", handleSubmit)
