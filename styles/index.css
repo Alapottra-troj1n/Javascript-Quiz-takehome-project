@@ -43,6 +43,7 @@
   font-weight: 500;
 }
 .ctaCard {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   padding: 65px 34px;
   background-color: white;
   border-radius: 20px;
