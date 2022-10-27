@@ -9,19 +9,22 @@
   margin: 0 auto;
 }
 
+
 .timer {
   position: fixed;
   background-color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 50%;
+  max-width: 800px;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
   font-size: 1.2rem;
   left: 50%;
   transform: translate(-50%, 0);
+ 
 }
 
 .timer > button {
@@ -77,4 +80,39 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+
+@media screen and (max-width: 967px) {
+
+.timer{
+ font-size: 10px;
+ max-width: 80% ;
+ width: 80%;
+ gap: 10px;
+ flex-wrap: wrap;
+}
+.timer > button{
+
+  font-size: 12px;
+
+}
+
+.quiz{
+  padding-top: 150px ;
+  width: 80%;
+}
+
+.quizWrapper{
+  font-size: 0.6rem;;
+}
+
+.answers{
+  font-size: 1rem;
+}
+
+.answers input[type="radio"]{
+  width: 15px;
+}
+
 }

@@ -42,3 +42,24 @@
 .resultsCard img{
     width: 70%;
 }
+
+
+@media screen and (max-width: 767px) {
+
+    .resultsCard{
+            width: 80%;
+    }
+    .resultsCard h2{
+        font-size: 30px;
+      
+    }
+    .resultsCard p{
+        font-size: 15px;
+      
+    }
+    .resultsCard button{
+        font-size: 15px;
+     
+    }
+
+}
