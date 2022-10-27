@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --homeAccent: #e0cabc;
+  --quizAccent: #b0b8ff;
+  --resultAccent: linear-gradient(269.85deg, #ffdf64 0.12%, #f4d456 99.86%);
+  --timeoutAccent: linear-gradient(269.85deg, #ff646d 0.12%, #f45656 99.86%);
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  background-color: var(--homeAccent);
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.heroSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.heroImage{
+    display:flex;
+    justify-content: flex-start;
+    flex:2;
+}
+
+.heroImage img{
+   height: 100%;
+   width: 100%;
+}
+
+.heroCTA{
+    flex:1;
+}

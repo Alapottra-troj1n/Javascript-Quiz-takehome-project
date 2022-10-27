@@ -1,1 +1,1 @@
-** Javascript Quiz - Take Home Project
+### Javascript Quiz - Take Home Project
