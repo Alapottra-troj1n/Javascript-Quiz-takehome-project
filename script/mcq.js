@@ -100,6 +100,9 @@ const quizData = [
 
 const answers = ['ate', 'I am eating rice', 'I have eaten rice', 'I have been eating rice for 1 year', 'I was eating rice', 'I have eaten rice', 'I have been eating rice for 1 year', 'I will be eating rice', 'I will have eaten rice', 'I will have been eating rice for 1 year']
 
+//USER SCORE
+
+let score = 0;
 
 // SELECTORS
 
@@ -128,7 +131,7 @@ const loadQuiz = () => {
                 <label for="radio1">${option}</label>
             </div>
             `).join('')
-            
+
             }
           
         </div>
@@ -143,8 +146,25 @@ const loadQuiz = () => {
 }
 
 const handleSubmit = () => {
+    score = 0;
+    let userAnswers = [quizContainer.q1.value, quizContainer.q2.value, quizContainer.q3.value, quizContainer.q4.value, quizContainer.q5.value,
+    quizContainer.q6.value, quizContainer.q7.value, quizContainer.q8.value,
+    quizContainer.q9.value, quizContainer.q10.value
 
-    
+    ];
+
+    console.log(userAnswers);
+
+    userAnswers.forEach((answer, index) => {
+        if (answer === answers[index]) {
+           return score += 1;
+        }
+    });
+
+    localStorage.setItem("userScore", score);
+    window.location.href = "./results.html";
+
+   
 }
 
 
