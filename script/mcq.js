@@ -108,6 +108,36 @@ let score = 0;
 
 const quizContainer = document.getElementById("quizContainer");
 const submitButton = document.getElementById("submitButton");
+const timer = document.getElementById("counter");
+
+
+
+
+//TIMER FUNCTIONALITY
+
+let minute = 10;
+let seconds = 0;
+
+setInterval(function () {
+    if (seconds < 0) {
+        minute--;
+        seconds = 59;
+    }
+    if (seconds <= 9) {
+        seconds = "0" + seconds;
+    }
+    if (seconds == 0 && minute == 0) {
+        localStorage.setItem("userScore", 0);
+        window.location.href = "./timeout.html";
+    }
+    timer.innerHTML = minute + ":" + seconds;
+    seconds--;
+}, 1000);
+
+
+
+
+
 
 
 
@@ -159,14 +189,14 @@ const handleSubmit = () => {
 
     userAnswers.forEach((answer, index) => {
         if (answer === answers[index]) {
-           return score += 1;
+            return score += 1;
         }
     });
 
     localStorage.setItem("userScore", score);
     window.location.href = "./results.html";
 
-   
+
 }
 
 
