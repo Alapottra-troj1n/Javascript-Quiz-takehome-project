@@ -166,7 +166,7 @@ const loadQuiz = () => {
             ${quizData[i].options.map((option, index) => {
 
                 const randomId = Math.random();
-                console.log(randomId);
+             
 
             return (
                 `<div>
